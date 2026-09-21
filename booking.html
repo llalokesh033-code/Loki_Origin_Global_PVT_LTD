@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Request a Quote — LOKI ORIGIN GLOBAL PVT. LTD.</title>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<header class="doc-header" role="banner">
+		<div class="header-inner">
+			<a class="header-left header-home-link" href="index.html" aria-label="LOKI ORIGIN GLOBAL home">
+				<img src="./resources/logo.jpg" alt="LOKI ORIGIN GLOBAL PVT. LTD. logo" class="logo-img" width="64" height="64" />
+				<div class="company-block">
+					<div class="company-name">LOKI ORIGIN GLOBAL PVT. LTD.</div>
+					<div class="company-tag">Premium Agricultural Products Exporter</div>
+				</div>
+			</a>
+			<div class="header-right">
+				<div class="menu-wrapper">
+					<button class="menu-toggle" type="button" aria-haspopup="true" aria-expanded="false">Menu <span class="menu-arrow">▾</span></button>
+					<div class="menu-dropdown" role="menu" aria-label="Header menu">
+						<a class="menu-link" href="index.html" role="menuitem"><span class="menu-icon" aria-hidden="true">⌂</span><span>Home</span></a>
+						<a class="menu-link" href="https://wa.me/8555009330" target="_blank" rel="noopener" role="menuitem"><span class="menu-icon" aria-hidden="true">◌</span><span>WhatsApp</span></a>
+						<a class="menu-link" href="https://instagram.com/loki_origin_global_pvt_ltd" target="_blank" rel="noopener" role="menuitem"><span class="menu-icon" aria-hidden="true">◉</span><span>Instagram</span></a>
+						<a class="menu-link" href="booking.html" aria-current="page" role="menuitem"><span class="menu-icon" aria-hidden="true">▣</span><span>Booking</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-divider"></div>
+	</header>
+
+	<main class="booking-page">
+		<section class="booking-intro" aria-labelledby="booking-title">
+			<div>
+				<p class="section-label">Request a quotation</p>
+				<h1 id="booking-title">Tell us what you need.</h1>
+				<p>Complete the form and we’ll receive your request directly on WhatsApp. The more detail you share, the more accurately we can prepare your quotation.</p>
+			</div>
+			<ol class="booking-steps" aria-label="How it works">
+				<li><span>01</span> Share your requirements</li>
+				<li><span>02</span> Receive a tailored quote</li>
+				<li><span>03</span> Confirm your order</li>
+			</ol>
+		</section>
+
+		<section class="booking-layout" aria-label="Quotation request form">
+			<form class="booking-form" id="booking-form">
+				<div class="form-heading">
+					<h2>Your export requirements</h2>
+					<p>All fields are required to prepare an accurate quote.</p>
+				</div>
+				<div class="form-grid">
+					<label>Full name<input name="name" type="text" autocomplete="name" required minlength="2" pattern="[A-Za-z][A-Za-z .'-]*" placeholder="Your name" /></label>
+					<label>Company name<input name="company" type="text" autocomplete="organization" required minlength="2" placeholder="Your company" /></label>
+					<label>Email address<input name="email" type="email" autocomplete="email" required placeholder="you@company.com" /></label>
+					<label>Phone / WhatsApp<input name="phone" type="tel" autocomplete="tel" required pattern="[0-9+() -]{7,20}" placeholder="Country code and number" /></label>
+					<label>Product required<input name="product" type="text" required minlength="2" placeholder="e.g. Black pepper, honey" /></label>
+					<label>Required quantity<input name="quantity" type="text" required minlength="2" placeholder="e.g. 500 kg or 1 container" /></label>
+					<label>Destination country<select name="destination" id="destination-country" autocomplete="country-name" required disabled><option value="">Loading countries…</option></select></label>
+					<label>Preferred packaging<select name="packaging" required><option value="">Select an option</option><option>Retail packaging</option><option>Bulk packaging</option><option>Custom packaging</option><option>Not sure yet</option></select></label>
+					<label class="date-field form-field-full">
+						<span class="date-field-label">Preferred date</span>
+						<span class="date-field-control">
+							<svg class="date-field-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v3m10-3v3M4.5 9.5h15M6.5 5h11A2.5 2.5 0 0 1 20 7.5v10a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5v-10A2.5 2.5 0 0 1 6.5 5Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" /></svg>
+							<input name="preferredDate" id="preferred-date" type="date" required aria-describedby="date-field-help" />
+						</span>
+						<small id="date-field-help">Select the date that works best for your delivery plan.</small>
+					</label>
+					<label class="form-field-full">Additional requirements<textarea name="notes" rows="4" required minlength="10" placeholder="Quality grade, certifications, port, or any other details that will help us quote accurately."></textarea></label>
+				</div>
+				<div class="form-submit-row">
+					<button class="booking-submit" type="submit">Send request on WhatsApp <span aria-hidden="true">→</span></button>
+					<p id="booking-status" class="booking-status" aria-live="polite">You’ll be redirected to WhatsApp to send your request.</p>
+				</div>
+			</form>
+
+			<aside class="booking-aside">
+				<div class="aside-icon" aria-hidden="true">✦</div>
+				<h2>A clear brief makes a better quote.</h2>
+				<p>Our team reviews your request for product availability, packaging, destination, and timing before preparing a response.</p>
+				<ul>
+					<li>Premium agricultural produce</li>
+					<li>Professional export packaging</li>
+					<li>Support from inquiry to delivery</li>
+				</ul>
+				<a href="index.html" class="aside-link">Learn more about LOKI <span aria-hidden="true">→</span></a>
+			</aside>
+		</section>
+	</main>
+
+	<footer class="booking-footer">
+		<p>© <span id="current-year"></span> LOKI ORIGIN GLOBAL PVT. LTD.</p>
+		<a href="index.html">Return to home <span aria-hidden="true">→</span></a>
+	</footer>
+
+	<script src="action.js"></script>
+</body>
+</html>
